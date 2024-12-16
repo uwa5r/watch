@@ -65,6 +65,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uwa5r-hosting</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #20232a;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .video-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .video {
+            width: 100%;
+            height: 450px;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .video video {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .video-title {
+            font-size: 1.25em;
+            margin: 15px 0;
+        }
+        .description {
+            font-size: 1em;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            background: #20232a;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -75,7 +143,7 @@
             <a href="#">Login</a>
         </nav>
     </header>
-
+  <div class='logout-messages'></div>
     <div class="video-container">
         <div class="video">
             <video controls poster="placeholder.jpg">
@@ -92,9 +160,6 @@
     </footer>
 </body>
 </html>
-    <img src='media/images/intro.gif' alt='Cute ptok' />
-  </div>
-  <div class='logout-messages'></div>
 </template>
 
 <script src='index.js'></script>
